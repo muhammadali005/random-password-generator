@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="logo.png" type="image/png" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container my-5">
+      <h1 class="text-center mainHeading">Random Password Generator</h1>
+      <form class="g-3 justify-content-center">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <label for="password-length" class="form-label labelSpace"
+              >Password Length:</label
+            >
+            <input type="number" id="password-length" class="form-control" />
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <label for="include-uppercase" class="form-check-label">
+              Include Uppercase Letters:</label
+            >
+            <input
+              type="checkbox"
+              id="include-uppercase"
+              class="form-check-input"
+            />
+          </div>
+          <div class="col-md-4">
+            <label for="include-lowercase" class="form-check-label"
+              >Include Lowercase Letters:</label
+            >
+            <input
+              type="checkbox"
+              id="include-lowercase"
+              class="form-check-input"
+            />
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <label for="include-numbers" class="form-check-label"
+              >Include Numbers:</label
+            >
+            <input
+              type="checkbox"
+              id="include-numbers"
+              class="form-check-input"
+            />
+          </div>
+          <div class="col-md-4">
+            <label for="include-symbols" class="form-check-label"
+              >Include Symbols:</label
+            >
+            <input
+              type="checkbox"
+              id="include-symbols"
+              class="form-check-input"
+            />
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <button type="button" id="generate-button" class="btn btn-success">
+              Generate Password
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <input
+              type="text"
+              id="password-display"
+              class="form-control mt-3"
+              readonly
+            />
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
